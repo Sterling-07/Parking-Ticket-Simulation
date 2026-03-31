@@ -24,7 +24,7 @@ void ParkingTicket::calcFine()
 		{
 			hours++;
 		}
-		parkingFine = ((hours - 1) + 25) * 10;
+		parkingFine = 25 + (hours - 1) * 10;
 	}
 }
 
