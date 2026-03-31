@@ -19,4 +19,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ParkedCar.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkingMeter.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParkingTicket.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PoliceOfficer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
