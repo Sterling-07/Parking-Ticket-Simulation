@@ -14,7 +14,7 @@ int main()
 	ParkedCar car("Honda", "Civic", "Silver", "123456", 100);
 	PoliceOfficer officer("John Doe", "58021");
 
-	ParkingTicket* Ticket = officer.check(car, park);
+	ParkingTicket* Ticket = officer.check(car, meter);
 
 	return 0;
 }

@@ -37,7 +37,15 @@ void ParkingTicket::print() const
 	cout << "Minutes Parked: " << minutes << endl;
 	cout << "Minutes Purchased " << minutesBought << endl;
 
+	if (parkingFine > 0)
+	{
+		cout << "Fine Amount: $" << parkingFine << endl;
+	}
+	else
+	{
+		cout << "There was no violation for this vehicle.\n";
+	}
 
-
-	cout << "Officer: " << name << ", " << badge << endl;
+	cout << "Officer: " << name << endl;
+	cout << "Badge: " << badge << endl;
 }
