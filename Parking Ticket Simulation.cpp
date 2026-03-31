@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include <string>
 #include "ParkedCar.h"
 #include "ParkingMeter.h"
 #include "ParkingTicket.h"
@@ -10,5 +11,10 @@ using namespace std;
 
 int main()
 {
+	ParkedCar car("Honda", "Civic", "Silver", "123456", 100);
+	PoliceOfficer officer("John Doe", "58021");
 
+	ParkingTicket* Ticket = officer.check(car, park);
+
+	return 0;
 }

@@ -1,6 +1,9 @@
 #pragma once
 
 #include <iostream>
+#include "ParkedCar.h"
+#include "ParkingMeter.h"
+#include "ParkingTicket.h"
 using namespace std;
 
 class PoliceOfficer
@@ -11,10 +14,14 @@ private:
 public:
 	PoliceOfficer(string nm, string bdg) : name(nm), badge(bdg) {}
 
-	ParkingTicket* check(ParkedCar const, ParkingMeter const) const
+	ParkingTicket* check(const ParkedCar& car, const ParkingMeter& park) const
 	{
-		if (Car.minutesBought)
+		if (car.findMinutes() > park.getMinutesBought())
+		{
+			return new ParkingTicket
+			car.findMake(), car.findModel(), car.findColor(), car.findLicense(),
+			car.findMinutes(), park.getMinutesBought();
+		}
 	}
-
 
 };
